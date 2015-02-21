@@ -14,18 +14,18 @@ public class Diamond {
 
     public void drawDiamond() {
         if (type == "isoscelesTriangle") {
-            drawTopTriangle(1, height - 1,height);
+            drawTopTriangle(1, height - 1, height);
         } else if (type == "diamond") {
-            drawTopTriangle(1, height - 1,height);
-            drawBottomTriangle(2 * (height - 2) + 1, 1,height);
+            drawTopTriangle(1, height - 1, height);
+            drawBottomTriangle(2 * (height - 2) + 1, 1, height);
         } else {
-            drawTopTriangle(1, height - 1,height-1);
+            drawTopTriangle(1, height - 1, height - 1);
             System.out.println("linliu");
-            drawBottomTriangle(2 * (height - 2) + 1, 1,height);
+            drawBottomTriangle(2 * (height - 2) + 1, 1, height);
         }
     }
 
-    public void drawTopTriangle(int starCount, int spaceCount,int height) {
+    public void drawTopTriangle(int starCount, int spaceCount, int height) {
         for (int row = 1; row <= height; row++) {
             drawSpace(spaceCount);
             drawStar(starCount);
@@ -35,7 +35,7 @@ public class Diamond {
         }
     }
 
-    public void drawBottomTriangle(int starCount, int spaceCount,int height) {
+    public void drawBottomTriangle(int starCount, int spaceCount, int height) {
         for (int row = 1; row <= height; row++) {
             drawSpace(spaceCount);
             drawStar(starCount);
