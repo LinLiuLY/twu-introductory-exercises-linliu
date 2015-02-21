@@ -6,6 +6,7 @@ package com.twu.exercises;
 public class Main {
     public static void main(String[] args) {
         drawTriangles();
+        drawDiamonds();
     }
 
     public static void drawTriangles() {
@@ -15,6 +16,17 @@ public class Main {
             System.out.println("Draw a " + types[i] + " triangle");
             Triangle triangle = new Triangle(inputs[i], types[i]);
             triangle.drawTriangle();
+            System.out.println();
+        }
+    }
+
+    public static void drawDiamonds() {
+        int height = 3;
+        String[] types = {"isoscelesTriangle","diamond","diamondWithName"};
+        for (int i = 0; i < types.length; i++) {
+            System.out.println("Draw a "+types[i]);
+            Diamond diamond = new Diamond(height,types[i]);
+            diamond.drawDiamond();
             System.out.println();
         }
     }

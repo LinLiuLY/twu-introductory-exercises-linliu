@@ -32,6 +32,7 @@ public class Triangle {
         for (int i = 0; i < number; i++) {
             if (type == "horizontal") {
                 System.out.print("*");
+                System.out.print(" ");
             } else {
                 System.out.println("*");
             }
